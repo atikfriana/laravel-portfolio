@@ -1,66 +1,139 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Tentu dong Tika! 😎 Ini dia versi **README lengkap** yang udah cakep banget buat dipajang di GitHub kamu. Formatnya udah pakai struktur profesional, cocok untuk portofolio kuliah, showcase Framer, atau dilampirkan saat ngelamar magang 🧠💼
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+---
 
-## About Laravel
+````markdown
+# 🎨 Laravel Portfolio Web App – Final Project Web Framework
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+> Dibuat sebagai Tugas Akhir Mata Kuliah **Web Framework** – Semester 3  
+> Dosen Pengampu: **Ibu Salnan**  
+> Mahasiswa: *Atika Arifiana*
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Aplikasi ini adalah sistem manajemen portofolio pribadi berbasis web yang dibangun dengan **Laravel**, **Blade Template**, dan **TailwindCSS**.  
+Website ini memiliki 2 sisi: tampilan publik dan tampilan admin (dengan autentikasi), di mana admin bisa mengelola semua konten secara CRUD.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## 📦 Fitur Aplikasi
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- 🔐 **Login Admin** – Sistem autentikasi halaman admin
+- 🎓 **CRUD Pendidikan** – Tambah, ubah, hapus data pendidikan
+- 💼 **CRUD Portofolio** – Kelola data portofolio
+- 🛠️ **CRUD Tools** – Tambahkan tools/skills
+- 🧭 **Navigasi Publik Lengkap** – Halaman landing, kontak, portofolio, tools
+- 🖥️ **Dashboard Admin Terpisah** – Layout khusus admin
+- 🎨 **Desain Responsif** – Menggunakan TailwindCSS
+- 🔧 **Routing Dinamis** – Laravel Web Routes
+- 🛠️ **Blade Template** – Struktur halaman yang reusable & rapi
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🗂️ Struktur Folder Views
 
-## Laravel Sponsors
+```bash
+resources/views/
+├── admin/             # Halaman utama admin
+├── auth/              # Halaman login
+├── layouts/           # Layout sidebar admin
+├── partial/           # Komponen (navbar, footer, kontak, tools, dsb)
+├── pendidikan/        # View pendidikan CRUD
+├── portofolio/        # View portofolio CRUD
+├── dashboard.blade.php
+├── index.blade.php    # Landing page publik
+└── welcome.blade.php
+````
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+---
 
-### Premium Partners
+## 🖼️ UI Preview
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+| Halaman Utama                                                                                     | Pendidikan                                                                                                    | Tools                                                                                               |
+| ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| ![Home](https://raw.githubusercontent.com/atikfriana/laravel-portfolio/main/screenshots/home.png) | ![Pendidikan](https://raw.githubusercontent.com/atikfriana/laravel-portfolio/main/screenshots/pendidikan.png) | ![Tools](https://raw.githubusercontent.com/atikfriana/laravel-portfolio/main/screenshots/tools.png) |
 
-## Contributing
+| Portofolio                                                                                                    | Kontak                                                                                                | Login                                                                                               |
+| ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| ![Portofolio](https://raw.githubusercontent.com/atikfriana/laravel-portfolio/main/screenshots/portofolio.png) | ![Kontak](https://raw.githubusercontent.com/atikfriana/laravel-portfolio/main/screenshots/kontak.png) | ![Login](https://raw.githubusercontent.com/atikfriana/laravel-portfolio/main/screenshots/login.png) |
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+| Daftar Admin                                                                                                     | Daftar Portofolio                                                                                                          | Daftar Pendidikan                                                                                                          |
+| ---------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| ![Daftar Admin](https://raw.githubusercontent.com/atikfriana/laravel-portfolio/main/screenshots/daftaradmin.png) | ![Daftar Portofolio](https://raw.githubusercontent.com/atikfriana/laravel-portfolio/main/screenshots/daftarportofolio.png) | ![Daftar Pendidikan](https://raw.githubusercontent.com/atikfriana/laravel-portfolio/main/screenshots/daftarpendidikan.png) |
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 🚀 Cara Menjalankan Proyek
 
-## Security Vulnerabilities
+> Kamu bisa jalankan proyek ini secara lokal menggunakan XAMPP + Composer
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### 🔧 Setup Localhost
 
-## License
+1. **Clone repositori**
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+   ```bash
+   git clone https://github.com/atikfriana/laravel-portfolio.git
+   cd laravel-portfolio
+   ```
+
+2. **Install dependency Laravel & Tailwind**
+
+   ```bash
+   composer install
+   npm install && npm run dev
+   ```
+
+3. **Copy dan konfigurasi file environment**
+
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
+
+4. **Set database di `.env`**
+   Ganti bagian:
+
+   ```
+   DB_DATABASE=laravel_portfolio
+   DB_USERNAME=root
+   DB_PASSWORD=
+   ```
+
+5. **Jalankan migrasi database**
+
+   ```bash
+   php artisan migrate
+   ```
+
+6. **Jalankan server lokal**
+
+   ```bash
+   php artisan serve
+   ```
+
+---
+
+## ⚠️ Catatan Tambahan
+
+* Jika database tidak tersedia, kamu bisa membuat ulang dari `php artisan make:migration` dan `php artisan migrate`
+* Semua file view dibuat menggunakan Blade template
+* TailwindCSS telah dikonfigurasi manual dengan `vite.config.js`
+
+---
+
+## ✨ Credits
+
+* Framework: [Laravel](https://laravel.com/)
+* Styling: [TailwindCSS](https://tailwindcss.com/)
+* Icon: [Heroicons](https://heroicons.com/)
+* Developer: [Atika Arifiana](https://github.com/atikfriana)
+
+---
+
+## 📄 Lisensi
+
+MIT License © 2025
+
+---
+
+````
+
+---
