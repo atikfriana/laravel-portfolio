@@ -1,5 +1,3 @@
-Tentu dong Tika! 😎 Ini dia versi **README lengkap** yang udah cakep banget buat dipajang di GitHub kamu. Formatnya udah pakai struktur profesional, cocok untuk portofolio kuliah, showcase Framer, atau dilampirkan saat ngelamar magang 🧠💼
-
 ---
 
 ````markdown
