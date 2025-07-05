@@ -1,11 +1,6 @@
----
-
-````markdown
 # 🎨 Laravel Portfolio Web App – Final Project Web Framework
 
 > Dibuat sebagai Tugas Akhir Mata Kuliah **Web Framework** – Semester 3  
-> Dosen Pengampu: **Ibu Salnan**  
-> Mahasiswa: *Atika Arifiana*
 
 Aplikasi ini adalah sistem manajemen portofolio pribadi berbasis web yang dibangun dengan **Laravel**, **Blade Template**, dan **TailwindCSS**.  
 Website ini memiliki 2 sisi: tampilan publik dan tampilan admin (dengan autentikasi), di mana admin bisa mengelola semua konten secara CRUD.
