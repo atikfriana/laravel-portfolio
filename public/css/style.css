@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500;1,700&display=swap");
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    margin-top: 130px;
+}
+
+/* css fake loading */
+.spinner-wrapper {
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s, opacity 1s;
+}
+
+.spinner-border {
+    height: 60px;
+    width: 60px;
+    color: #908;
+}
+
+/* css head start */
+.sec-head {
+    padding: 30px 0 80px 0;
+ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1013%26quot%3b)' fill='none'%3e%3cpath d='M1301.898%2c255.674C1318.492%2c255.776%2c1331.315%2c242.838%2c1339.493%2c228.399C1347.531%2c214.208%2c1351.157%2c197.085%2c1343.121%2c182.893C1334.986%2c168.525%2c1318.409%2c161.907%2c1301.898%2c162C1285.564%2c162.092%2c1269.433%2c169.091%2c1261.473%2c183.354C1253.684%2c197.31%2c1257.296%2c213.992%2c1265.094%2c227.942C1273.127%2c242.313%2c1285.434%2c255.573%2c1301.898%2c255.674' fill='rgba(153%2c 0%2c 136%2c 0.7)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M580.1079781252754 444.69219807925026L716.860982959709 499.9439984941234 772.112783374582 363.19099365968987 635.3597785401486 307.9391932448167z' fill='rgba(153%2c 0%2c 136%2c 0.7)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M66.724%2c538.931C90.922%2c540.87%2c117.821%2c533.373%2c129.041%2c511.846C139.766%2c491.268%2c125.445%2c468.759%2c113.743%2c448.721C102.192%2c428.941%2c89.618%2c405.883%2c66.724%2c405.134C43.038%2c404.359%2c24.329%2c424.102%2c14.054%2c445.458C5.088%2c464.093%2c9.447%2c485.058%2c19.599%2c503.075C29.985%2c521.506%2c45.636%2c537.241%2c66.724%2c538.931' fill='rgba(153%2c 0%2c 136%2c 0.7)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M639.958%2c277.057C663.774%2c278.227%2c685.263%2c263.058%2c696.902%2c242.246C708.265%2c221.928%2c708.339%2c196.747%2c695.863%2c177.092C684.172%2c158.674%2c661.77%2c152.174%2c639.958%2c152.533C618.878%2c152.88%2c597.565%2c160.549%2c587.155%2c178.883C576.853%2c197.027%2c582.064%2c218.712%2c591.947%2c237.088C602.519%2c256.743%2c617.667%2c275.962%2c639.958%2c277.057' fill='rgba(153%2c 0%2c 136%2c 0.7)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M845.3276147230846 184.29840342373348L725.400327765165 184.29840342373348 725.400327765165 304.22569038165307 845.3276147230846 304.22569038165307z' fill='rgba(153%2c 0%2c 136%2c 0.7)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1279.8372760011773 394.1476632233319L1261.9306789788654 495.70102136719026 1423.2140147058087 471.784237828729z' fill='rgba(153%2c 0%2c 136%2c 0.7)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1319.5882194688454 205.18847626289002L1319.4627945795023 336.79607992382756 1420.0841154904115 281.02077097377673z' fill='rgba(153%2c 0%2c 136%2c 0.7)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M166.222%2c291.207C189.79%2c291.758%2c210.338%2c275.375%2c220.928%2c254.314C230.545%2c235.19%2c225.768%2c213.064%2c214.741%2c194.717C204.102%2c177.016%2c186.874%2c163.413%2c166.222%2c163.292C145.38%2c163.17%2c127.027%2c176.034%2c116.711%2c194.144C106.505%2c212.062%2c106.406%2c233.486%2c115.776%2c251.855C126.163%2c272.217%2c143.37%2c290.673%2c166.222%2c291.207' fill='rgba(153%2c 0%2c 136%2c 0.7)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1013'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+}
+
+.btn-head {
+    background: linear-gradient(#908, #337ccf);
+    background-repeat: no-repeat;
+    transition: 1s;
+}
+
+.btn-head:hover {
+    color: white;
+}
+
+.fotoku {
+    background-color: #908;
+    border-radius: 50%;
+    transition: all 400ms ease-in;
+}
+
+.fotoku:hover {
+    background-color: #ec30d3;
+}
+/* css head end */
+
+/* Pendidikan dan Portfolio */
+.pendidikan, .portfolio {
+    padding-top: 20px; /* Kurangi jarak */
+    opacity: 1;
+    transition: 1.5s;
+}
+
+/* css kontak start */
+.sec-kontak {
+    padding: 50px 0 100px 0;
+}
+
+.card-kontak {
+    background: #908;
+    color: black;
+    transition: 1.5s;
+}
+
+.card-kontak:hover {
+    color: white;
+}
+
+a {
+    color: black;
+}
+/* css kontak end */
+
+/* Navigation bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    list-style-type: none;
+    margin: 0;
+}
+
+
+/* Sections */
+section {
+    padding: 100px 20px;
+    height: 600px;
+    scroll-snap-align: start;
+}
+
+body {
+    scroll-snap-type: y mandatory;
+    font-family: "Ubuntu", sans-serif;
+}
